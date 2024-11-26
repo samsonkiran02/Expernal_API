@@ -1,7 +1,8 @@
+// Fetch API
 const LoadAPI = () => {
     fetch("https://fakestoreapi.com/products")
     .then(responce => responce.json())
-    .then(data => console.log(data))
+    .then(data => DisplayProducts(data))
 }
 
 // get data
@@ -14,6 +15,14 @@ const Getdata = (product) => {
             <p>${product.price}</p>
         </div>
     `)
+}
+
+// Display products
+
+const DisplayProducts = (products) => {
+    const DisplayHTML = products.map(product => Getdata(product));
+    const Container = document.getElementById("products");
+    Container.innerHTML = DisplayHTML;
 }
 
 LoadAPI();
