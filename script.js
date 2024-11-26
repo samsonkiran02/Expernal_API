@@ -22,7 +22,7 @@ const Getdata = (product) => {
 const DisplayProducts = (products) => {
     const DisplayHTML = products.map(product => Getdata(product));
     const Container = document.getElementById("products");
-    Container.innerHTML = DisplayHTML;
+    Container.innerHTML = DisplayHTML.join(" ");
 }
 
 LoadAPI();

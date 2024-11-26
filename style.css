@@ -12,3 +12,27 @@ h1 {
     padding: 15px;
     text-align: center;
 }
+
+.products {
+    max-width: 1200Px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.product {
+    background-color: whitesmoke;
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+}
+
+p {
+    background-color: whitesmoke;
+}
