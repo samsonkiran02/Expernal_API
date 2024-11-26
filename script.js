@@ -1,6 +1,6 @@
 // Fetch API
 const LoadAPI = () => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("products.json")
     .then(responce => responce.json())
     .then(data => DisplayProducts(data))
 }
