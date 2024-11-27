@@ -1,4 +1,5 @@
 // Fetch API
+// https://fakestoreapi.com/products
 const LoadAPI = () => {
     fetch("products.json")
     .then(responce => responce.json())
@@ -10,9 +11,9 @@ const Getdata = (product) => {
     return (`
         <div class="product">
             <img src="${product.image}">
-            <p>${product.title}</p>
-            <p>${product.category}</p>
-            <p>${product.price}</p>
+            <p class="p1">${product.title}</p>
+            <p class="p2">${product.category}</p>
+            <p class="p3">$${product.price}</p>
         </div>
     `)
 }
